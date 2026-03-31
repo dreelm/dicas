@@ -47,44 +47,110 @@
 
 //OPERADORES ARITMÉDICOS
 
-const valor1=20;
-const valor2=10;
-console.log(valor1 + valor2);
-console.log(valor1 / valor2);
-console.log(valor1 - valor2);
-console.log(valor1 * valor2);
+// const valor1=20;
+// const valor2=10;
+// console.log(valor1 + valor2);
+// console.log(valor1 / valor2);
+// console.log(valor1 - valor2);
+// console.log(valor1 * valor2);
     
-//OPERADORES LÓGICOS
+// //OPERADORES LÓGICOS
 
-console.log(valor1 > valor2);
-console.log(valor1 > 10 && valor2 != 20)
-console.log(valor2 > 5 || valor1 > 50)
+// console.log(valor1 > valor2);
+// console.log(valor1 > 10 && valor2 != 20)
+// console.log(valor2 > 5 || valor1 > 50)
 
-//OPERADORES DE COMPARAÇAO
-console.log(valor1 < valor2);
-console.log(valor1 >= valor2);
-console.log(valor1 <= valor1);
-console.log(valor1 != valor2);
-console.log(valor1 == valor2);
-console.log(valor1 === valor2);
-console.log("o valor é", valor2);
+// //OPERADORES DE COMPARAÇAO
+// console.log(valor1 < valor2);
+// console.log(valor1 >= valor2);
+// console.log(valor1 <= valor1);
+// console.log(valor1 != valor2);
+// console.log(valor1 == valor2);
+// console.log(valor1 === valor2);
+// console.log("o valor é", valor2);
 
-//1) EXERCICIO
+// //1) EXERCICIO
 
-//Utilizando as variáveis p (preço do produto) e  v(valor do desconto), crie uma nova variável 
-//chamada precoFinal que subtraia o desconto do preço e exiba o resultado. 
+// //Utilizando as variáveis p (preço do produto) e  v(valor do desconto), crie uma nova variável 
+// //chamada precoFinal que subtraia o desconto do preço e exiba o resultado. 
 
-const p=20;
-const v=10;
-const precofinal = p - v;
-console.log("o preço final com desconto é:", precofinal)
+// const p=20;
+// const v=10;
+// const precofinal = p - v;
+// console.log("o preço final com desconto é:", precofinal)
 
-//2)
+// //2)
 
-//Verificação de Segurança (Login e Token)
-//No banco, para autorizar uma transação, precisamos que o usuário esteja logado e que o token de segurança seja válido.
+// //Verificação de Segurança (Login e Token)
+// //No banco, para autorizar uma transação, precisamos que o usuário esteja logado e que o token de segurança seja válido.
 
-const usuariologado=1;
-const token=100;
-const TransacaoAutorizada = usuariologado === 1 && token >=10;
-console.log("transaçao autorizada com sucesso", TransacaoAutorizada);
+// const usuariologado=1;
+// const token=100;
+// const TransacaoAutorizada = usuariologado === 1 && token >=10;
+// console.log("transaçao autorizada com sucesso", TransacaoAutorizada);
+
+//ESTRUTURA CONDICIONAL 
+
+//if
+if(false){
+    console.log("é verdadeiro")
+}
+//if/else
+
+let nome="fiap";
+
+if(nome=="fiap"){
+    console.log("nome verdadeiro")
+}
+else{
+    console.log("nome errado")
+}
+//if encadeado ou aninhado
+
+let idade =17;;
+ 
+if(idade <= 13){
+    console.log("é uma criança")
+}else if(idade >13 && idade <=18){
+    console.log("é um adolescente")
+}else if(idade >=18 && idade <=59){
+    console.log("é um adulto")    
+}
+else{
+    console.log("é um idoso")
+}
+
+//SWITCH CASE 
+
+let times="santos";
+
+switch(times){
+    case "santos":
+        console.log("um time idoso")
+        break;
+    case "sao paulo":
+        console.log("time panetone")
+        break;
+    case "palmeiras":
+        console.log("SEM MUNDIAL")
+        break;
+    case "corinthians":
+        console.log("time fraco")
+        break;
+    default:
+        console.log("é tao ruim quanto a selecao brasileira")}
+
+// ternaria
+
+let salario=100;
+let resultado = salario ==100 ? "salario certo":"salario errado"
+console.log(resultado)
+
+let usuario="fiap";
+let userlogado= usuario ==="fiap"?"logado com sucesso":"usuario invalido"
+console.log(userlogado)
+
+function verificarParImpar(numero){
+    return numero % 2 === 0 ?"Este número é par":"Este número é impar"
+}
+console.log(verificarParImpar(10))
